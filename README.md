@@ -33,14 +33,17 @@ ReplicantNet is a **vision-based AI model** designed to classify images from the
 - Retrained classifier and analyzed performance changes  
 
 ### **3. Generative Adversarial Networks (GANs) Augmentation**  
-- Trained a **GAN** to generate realistic images for each class  
-- Evaluated performance improvement using the **augmented dataset**  
-- Analyzed cases where augmentation helps (or fails)  
+- Trained a **DCGAN** model for each of the 20 Pascal VOC classes
+- Generated synthetic images at 64×64 resolution with class-specific generators
+- Augmented training data with **0, 100, 200, and 500 samples per class**
+- Applied label smoothing and dropout for GAN stability
+- Used weighted sampling to balance original and synthetic data
 
 ### **4. Comparative Analysis & Discussion**  
-- **Performance comparison:** Original vs. VAE-augmented vs. GAN-augmented  
-- **Curves & Visualization:** mAP scores across different training sets  
-- **Discussion:** Why and why not synthetic data improves classification  
+- **Performance metrics:** Baseline mAP vs. augmented dataset performance
+- **Visualization:** Sample GAN-generated images and mAP vs. augmentation curves
+- **Analysis:** Identified when synthetic data helps (increased diversity, regularization effect) or hurts (poor quality generation, distribution shift)
+- **Findings:** Optimal synthetic sample count and weighting strategy for best performance
 
 ---
 
@@ -56,7 +59,6 @@ ReplicantNet/
 │   ├── train_vgg.py          # Transfer Learning with VGGNet
 │   ├── train_vae.py          # VAE training & augmentation
 │   ├── train_gan.py          # GAN training & augmentation
-│   ├── evaluate.py           # Model Evaluation
 │── README.md                 # Project Documentation
 ```
 
