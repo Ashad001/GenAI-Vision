@@ -1,0 +1,295 @@
+GAN Training Summary
+===================
+
+Class Distribution Analysis
+--------------------------------------------------
+Class           Original   Synthetic  Ratio     
+--------------------------------------------------
+aeroplane       119        100        0.84      
+bicycle         92         100        1.09      
+bird            166        100        0.60      
+boat            111        100        0.90      
+bottle          129        100        0.78      
+bus             48         100        2.08      
+car             243        100        0.41      
+cat             159        100        0.63      
+chair           177        100        0.56      
+cow             37         100        2.70      
+diningtable     53         100        1.89      
+dog             186        100        0.54      
+horse           96         100        1.04      
+motorbike       102        100        0.98      
+person          947        100        0.11      
+pottedplant     85         100        1.18      
+sheep           32         100        3.12      
+sofa            69         100        1.45      
+train           78         100        1.28      
+tvmonitor       107        100        0.93      
+--------------------------------------------------
+aeroplane       119        200        1.68      
+bicycle         92         200        2.17      
+bird            166        200        1.20      
+boat            111        200        1.80      
+bottle          129        200        1.55      
+bus             48         200        4.17      
+car             243        200        0.82      
+cat             159        200        1.26      
+chair           177        200        1.13      
+cow             37         200        5.41      
+diningtable     53         200        3.77      
+dog             186        200        1.08      
+horse           96         200        2.08      
+motorbike       102        200        1.96      
+person          947        200        0.21      
+pottedplant     85         200        2.35      
+sheep           32         200        6.25      
+sofa            69         200        2.90      
+train           78         200        2.56      
+tvmonitor       107        200        1.87      
+--------------------------------------------------
+aeroplane       119        500        4.20      
+bicycle         92         500        5.43      
+bird            166        500        3.01      
+boat            111        500        4.50      
+bottle          129        500        3.88      
+bus             48         500        10.42     
+car             243        500        2.06      
+cat             159        500        3.14      
+chair           177        500        2.82      
+cow             37         500        13.51     
+diningtable     53         500        9.43      
+dog             186        500        2.69      
+horse           96         500        5.21      
+motorbike       102        500        4.90      
+person          947        500        0.53      
+pottedplant     85         500        5.88      
+sheep           32         500        15.62     
+sofa            69         500        7.25      
+train           78         500        6.41      
+tvmonitor       107        500        4.67      
+
+Created augmented dataset with 2111 original and 10000 synthetic samples
+
+
+Class: aeroplane
+--------------------------------------------------
+Best Generator Loss: 0.9155
+Training Time: 13.18 seconds
+Early Stopping at Epoch: 32
+Total Epochs Recorded: 32
+Average Discriminator Loss: 1.2634
+Average Generator Loss: 1.8873
+
+
+Class: bicycle
+--------------------------------------------------
+Best Generator Loss: 1.0836
+Training Time: 8.33 seconds
+Early Stopping at Epoch: 32
+Total Epochs Recorded: 32
+Average Discriminator Loss: 1.4078
+Average Generator Loss: 1.5312
+
+
+Class: bird
+--------------------------------------------------
+Best Generator Loss: 1.0332
+Training Time: 15.28 seconds
+Early Stopping at Epoch: 32
+Total Epochs Recorded: 32
+Average Discriminator Loss: 1.3493
+Average Generator Loss: 1.6961
+
+
+Class: boat
+--------------------------------------------------
+Best Generator Loss: 1.2350
+Training Time: 11.07 seconds
+Early Stopping at Epoch: 32
+Total Epochs Recorded: 32
+Average Discriminator Loss: 1.1906
+Average Generator Loss: 1.8929
+
+
+Class: bottle
+--------------------------------------------------
+Best Generator Loss: 1.1890
+Training Time: 12.02 seconds
+Early Stopping at Epoch: 32
+Total Epochs Recorded: 32
+Average Discriminator Loss: 1.4348
+Average Generator Loss: 1.6248
+
+
+Class: bus
+--------------------------------------------------
+Best Generator Loss: 1.0763
+Training Time: 7.38 seconds
+Early Stopping at Epoch: 32
+Total Epochs Recorded: 32
+Average Discriminator Loss: 1.4313
+Average Generator Loss: 1.4966
+
+
+Class: car
+--------------------------------------------------
+Best Generator Loss: 1.1222
+Training Time: 19.69 seconds
+Early Stopping at Epoch: 32
+Total Epochs Recorded: 32
+Average Discriminator Loss: 1.1724
+Average Generator Loss: 2.1055
+
+
+Class: cat
+--------------------------------------------------
+Best Generator Loss: 1.0169
+Training Time: 11.93 seconds
+Early Stopping at Epoch: 32
+Total Epochs Recorded: 32
+Average Discriminator Loss: 1.5213
+Average Generator Loss: 1.5295
+
+
+Class: chair
+--------------------------------------------------
+Best Generator Loss: 1.1059
+Training Time: 15.53 seconds
+Early Stopping at Epoch: 32
+Total Epochs Recorded: 32
+Average Discriminator Loss: 1.3507
+Average Generator Loss: 1.8262
+
+
+Class: cow
+--------------------------------------------------
+Best Generator Loss: 0.9819
+Training Time: 7.58 seconds
+Early Stopping at Epoch: 32
+Total Epochs Recorded: 32
+Average Discriminator Loss: 1.4736
+Average Generator Loss: 1.4552
+
+
+Class: diningtable
+--------------------------------------------------
+Best Generator Loss: 0.8438
+Training Time: 7.35 seconds
+Early Stopping at Epoch: 32
+Total Epochs Recorded: 32
+Average Discriminator Loss: 1.6392
+Average Generator Loss: 1.3096
+
+
+Class: dog
+--------------------------------------------------
+Best Generator Loss: 1.1087
+Training Time: 15.86 seconds
+Early Stopping at Epoch: 32
+Total Epochs Recorded: 32
+Average Discriminator Loss: 1.4124
+Average Generator Loss: 1.7076
+
+
+Class: horse
+--------------------------------------------------
+Best Generator Loss: 1.0451
+Training Time: 11.18 seconds
+Early Stopping at Epoch: 32
+Total Epochs Recorded: 32
+Average Discriminator Loss: 1.4032
+Average Generator Loss: 1.7065
+
+
+Class: motorbike
+--------------------------------------------------
+Best Generator Loss: 1.0482
+Training Time: 11.62 seconds
+Early Stopping at Epoch: 32
+Total Epochs Recorded: 32
+Average Discriminator Loss: 1.4583
+Average Generator Loss: 1.6014
+
+
+Class: person
+--------------------------------------------------
+Best Generator Loss: 1.3823
+Training Time: 64.51 seconds
+Early Stopping at Epoch: 32
+Total Epochs Recorded: 32
+Average Discriminator Loss: 1.0227
+Average Generator Loss: 2.3141
+
+
+Class: pottedplant
+--------------------------------------------------
+Best Generator Loss: 1.0238
+Training Time: 8.59 seconds
+Early Stopping at Epoch: 32
+Total Epochs Recorded: 32
+Average Discriminator Loss: 1.5110
+Average Generator Loss: 1.4046
+
+
+Class: sheep
+--------------------------------------------------
+Best Generator Loss: 1.0349
+Training Time: 7.72 seconds
+Early Stopping at Epoch: 32
+Total Epochs Recorded: 32
+Average Discriminator Loss: 1.4268
+Average Generator Loss: 1.5374
+
+
+Class: sofa
+--------------------------------------------------
+Best Generator Loss: 1.0821
+Training Time: 8.39 seconds
+Early Stopping at Epoch: 32
+Total Epochs Recorded: 32
+Average Discriminator Loss: 1.4527
+Average Generator Loss: 1.5846
+
+
+Class: train
+--------------------------------------------------
+Best Generator Loss: 0.9426
+Training Time: 8.67 seconds
+Early Stopping at Epoch: 32
+Total Epochs Recorded: 32
+Average Discriminator Loss: 1.2382
+Average Generator Loss: 1.8564
+
+
+Class: tvmonitor
+--------------------------------------------------
+Best Generator Loss: 0.9634
+Training Time: 10.68 seconds
+Early Stopping at Epoch: 32
+Total Epochs Recorded: 32
+Average Discriminator Loss: 1.4300
+Average Generator Loss: 1.6177
+
+
+Final Results
+--------------------------------------------------
+Samples per class: 0, mAP: 0.6132
+Samples per class: 100, mAP: 0.4993
+Samples per class: 200, mAP: 0.3697
+Samples per class: 500, mAP: 0.1973
+
+
+Discussion
+--------------------------------------------------
+2193.0s 3420 Baseline mAP (0 synthetic samples): 0.6132
+2193.0s 3421 Performance DID NOT IMPROVE (or worsened) with augmentation.
+2193.0s 3422 Best mAP among augmented runs was 0.6132 with 0 samples (compare to baseline 0.6132).
+2193.0s 3423
+2193.0s 3424 Possible reasons for lack of improvement or worsening:
+2193.0s 3425 1. Poor GAN Quality: The DCGAN might have generated unrealistic or low-quality images (mode collapse, artifacts) that confused the classifier or didn't represent the true data distribution.
+2193.0s 3426 2. Distribution Shift: The synthetic data distribution might be significantly different from the real data distribution, leading the classifier astray.
+2193.0s 3427 3. Simplistic Labeling: Assigning only a single label to synthetic images might contradict the multi-label nature of the real data, potentially harming performance on complex images.
+2193.0s 3428 4. Sufficient Original Data: The original training set might already be large or diverse enough for the chosen classifier architecture, making augmentation less impactful or even detrimental if the synthetic data is noisy.
+2193.0s 3429 5. Suboptimal Augmentation Amount: The tested amounts (100, 200, 500) might not be optimal. Too few samples might not help, while too many poor-quality samples could hurt.
+2193.0s 3430
+
