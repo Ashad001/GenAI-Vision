@@ -6,7 +6,7 @@ ReplicantNet is a **vision-based AI model** designed to classify images from the
 ---
 
 ## **Features**  
-✅ **Transfer Learning with VGGNet** – Fine-tuned for Pascal Classification  
+✅ **Transfer Learning with VGGNet and Resnet50** – Fine-tuned for Pascal Classification  
 ✅ **Synthetic Data Generation** – Using **VAE** and **GANs**  
 ✅ **Performance Evaluation** – Measuring impact of augmentation on mAP  
 ✅ **Comparative Analysis** – Studying real vs. AI-generated data  
@@ -21,11 +21,12 @@ ReplicantNet is a **vision-based AI model** designed to classify images from the
 
 ## **Methodology**  
 
-### **1. Transfer Learning with VGGNet**  
-- Implemented **VGGNet** pre-trained on **ImageNet**  
+### **1. Transfer Learning with VGGNet and Resnet50**  
+- Implemented **VGGNet and Resnet50** pre-trained on **ImageNet**  
 - Fine-tuned for Pascal classification  
 - Evaluated on **Mean Average Precision (mAP)**  
 - Showcased **Top 10 ranked classified images**  
+- then making a comparision based on **Accuracy**
 
 ### **2. Variational AutoEncoder (VAE) Augmentation**  
 - Trained a **VAE** model to generate synthetic images per class  

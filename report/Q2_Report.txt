@@ -1,0 +1,45 @@
+
+
+
+-------------Resnet 50---------------------------
+Load Data
+Calls load_data() → image paths & binary label matrix.
+
+Train-Val Split
+80% training, 20% validation.
+Create Data Generators
+augment=True for training
+augment=False for validation
+Build Model & Initial Training (frozen base)
+Train for 5 epochs with frozen ResNet50 layers.
+Fine-Tune (unfreeze partial base)
+Unfreezes first 100 layers.
+Trains for 10 more epochs with a lower learning rate.
+Evaluate Model (on validation set)
+Collect predictions and labels
+Compute and print mAP
+Visualize Top Predictions for One Class
+Pick a target_class (e.g., 'dog')
+Rank top 10 validation images by confidence
+Show them using matplotlib with confidence and predicted labels.
+Save Model
+Save the trained model in .keras format.
+
+Validation mAP: 0.7583
+
+-------------vgg16---------------------------
+his script performs multi-class image classification using transfer learning with VGG16.
+It first splits the dataset into training (70%), validation (15%), and test (15%) sets by moving images into corresponding class-based directories. 
+Images are then loaded using Keras' ImageDataGenerator, applying rescaling to normalize pixel values.
+The model uses a pre-trained VGG16 base with frozen weights, followed by global average pooling and two dense layers, ending with a softmax layer for classifying 20 categories.
+It is compiled with the Adam optimizer and categorical crossentropy loss, suitable for multi-class classification with one-hot encoded labels. 
+The model is initially evaluated on the test set and then trained for 15 epochs using the training and validation datasets.
+
+accuracy: 0.6505 - loss: 1.1593
+
+
+
+hence in the end ResNet50 is generally better than VGG16 for most image classification tasks.
+It’s deeper, more accurate, and uses residual learning to prevent vanishing gradients.
+Despite having more layers, it's often faster and more memory-efficient than VGG16.
+It performs better on large-scale or complex datasets.
