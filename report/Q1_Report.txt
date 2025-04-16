@@ -1,0 +1,39 @@
+(a) Understand the Problem, Data, Evaluation Function [1 Point] 
+
+Explanation: 
+
+Problem: The PASCAL VOC 2008 challenge includes a classification task where the goal is to predict the presence or absence of 20 object classes (e.g., aeroplane, bicycle, bird, etc.) in realistic scene images. This is a binary classification problem per class (e.g., “Is there an aeroplane in this image? Yes/No”). 
+
+Data: The dataset consists of labeled images split into training/validation and test sets. The training/validation set contains images with annotations (e.g., class labels and bounding boxes), while the test set is used for evaluation. Images are sourced from Flickr and vary in complexity (e.g., multiple objects, occlusions). The 20 classes are balanced across splits. 
+
+Evaluation Function: The main evaluation metric for the classification task is Mean Average Precision (mAP). Average Precision (AP) is computed per class, and mAP is the mean of AP across all 20 classes. AP measures the quality of ranked predictions by balancing precision and recall. 
+
+ 
+
+Report Section for (a): 
+
+Introduction to the Problem  
+
+The PASCAL VOC 2008 classification challenge aims to detect the presence of 20 object classes in images. 
+
+It’s a supervised learning task with a training set of labeled images and a test set for evaluation. 
+
+Dataset Description  
+
+Training/validation data: Labeled images with 20 classes (e.g., person, car, dog). 
+
+Test data: Unannotated during the challenge, used for final evaluation. 
+
+Images are realistic, with challenges like occlusion, varying scales, and backgrounds. 
+
+Evaluation Metric: Mean Average Precision (mAP)  
+
+AP per class is calculated from a precision-recall curve based on ranked predictions. 
+
+Precision = True Positives / (True Positives + False Positives). 
+
+Recall = True Positives / (True Positives + False Negatives). 
+
+mAP = Average of AP across all 20 classes. 
+
+Example: For “aeroplane,” rank all test images by confidence score. Compute precision and recall at each rank, then average precision over recall levels (e.g., 0 to 1). Repeat for all classes and average. 
