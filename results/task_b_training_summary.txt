@@ -1,0 +1,36 @@
+Classification Comparison Report Summary
+
+Task B Overview:
+A classification performance comparison was conducted using three CNN-based architectures—VGG16_BN, ResNet50, and EfficientNet_B3—on the Pascal VOC 2008 dataset. Each model was trained for 10 epochs using a batch size of 32 on a CUDA-enabled device.
+
+---
+
+Training and Evaluation Summary:
+
+| Model           | mAP    | F1 Score (Weighted) | Accuracy (Exact Match) |
+|----------------|--------|---------------------|-------------------------|
+| VGG16_BN        | 0.2755 | 0.3904              | 0.2719                  |
+| ResNet50        | 0.5837 | 0.6379              | 0.4412                  |
+| EfficientNet_B3 | 0.7082 | 0.7555              | 0.5597                  |
+
+- VGG16_BN showed the lowest performance across all metrics, with an exact match accuracy of 27.19%.
+- ResNet50 demonstrated significant improvement, achieving an accuracy of 44.12% and a weighted F1 score of 0.6379.
+- EfficientNet_B3 outperformed both models with the highest accuracy (55.97%), weighted F1 score (0.7555), and mean average precision (mAP) of 0.7082.
+
+---
+
+Training Efficiency:
+- All models completed training without batch skips.
+- EfficientNet_B3 had the fastest training per epoch (~24s), while VGG16_BN was the slowest (~44s per epoch average).
+
+---
+
+Post-Training Visualizations:
+Top 10 ranked images per class were generated for all 20 VOC categories (e.g., aeroplane, cat, person, etc.) across all three models to aid qualitative analysis.
+
+---
+
+Conclusion:
+EfficientNet_B3 is the most effective model in this comparison, delivering superior classification performance across all evaluation metrics. This makes it the preferred architecture for deployment in similar multi-class classification tasks.
+
+---  
